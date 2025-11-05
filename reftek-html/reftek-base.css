@@ -1,11 +1,11 @@
 :root {
     /* Overall */
     --margins: 10px;
-    --bg: white;
-    --primary: black;
+    --bg: #05007E;
+    --primary: #FAFF81;
     --border: 1px;
     --radius: 0px;
-    --font: "sans"; /* pick from sans, serif, or mono */
+    --font: "mono"; /* pick from sans, serif, or mono */
 
     /* Sections */
     --bg-trans: rgba(0,0,0,0.0);
@@ -15,8 +15,8 @@
     --shadow-color: rgba(0,0,0,0.2);
 
     /* Section headers */
-    --header-bg: black;
-    --header-text: white;
+    --header-bg: #326273;
+    --header-text: #FAFF81;
 
     /* Info */
     --button-bg: black;
@@ -44,6 +44,10 @@
     font-family: "mono";
     font-weight: bold;
     src: url("fonts/mono_b.ttf");
+}
+@font-face {
+    font-family: "thunderman";
+    src: url("fonts/Thunderman.ttf");
 }
 
 @media (orientation: portrait) {
@@ -176,7 +180,7 @@ h5 {
 .tableSeparator {
     margin: 0;
     text-align: center;
-    font-family: "mono";
+	font-family: "mono";
     padding: 5px;
     font-size: 12px;
     border-bottom: 1px solid;
@@ -187,7 +191,7 @@ h5 {
 #title {
     display: flex;
     justify-content: center;
-
+	
 }
 
 ul {

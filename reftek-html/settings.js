@@ -3,21 +3,23 @@
 // ADD ANGLES HERE. 
 // Display name first, file path second.
 const angles = [
-    ["?", "images/placeholder.png"],
-    ["!", "images/placeholder.png"]
+    ["Front", "images/springtail_front_nakey.png"],
+	["Three-Fourths", "images/springtail_34th_nakey.png"],
+//    ["!", "images/placeholder.png"]
 ]
 
 // ANGLE TOGGLES
 // Enable and Disable
 const angleToggles = [
-    ""
+    "",
+	"Goggles"
 ]
 
 // ADD OUTFITS HERE. 
 // Display name first, file path second.
 const outfits = [
-    ["?", "images/placeholder.png"],
-    ["!", "images/placeholder.png"]
+    ["Default", "images/springtail_front_default.png"],
+//    ["!", "images/placeholder.png"]
 ]
 
 // ADD INFO HERE.
@@ -27,7 +29,7 @@ const outfits = [
 // To use an image title, put "i" as the first value and the path to the image as the second.
 // If you don't want to use a title, put the first value as "n".
 // const title = ["i", "images/logo.svg"]
-const title = ["t", "Placeholder"]
+const title = ["t", "SPRINGTAIL"]
 
 // INFORMATION
 
@@ -35,14 +37,21 @@ const title = ["t", "Placeholder"]
 // For headings, Put the heading text as the first value and then put "h" as the second.
 // For unordered lists, Put the heading text as the first value and then put "l" as the second. Then for a third value, make an array that 
 const info = [
-    ["Placeholder", "Placeholder"]
+	["Name", "??? 'Springtail' ???"],
+	["Species", "Hexapodian (Springtail) Cosmic Entity"],
+	["Gender", "Bigender"],
+    ["Pronouns", "Any/All"],
+    ["Cosmic Duty", "Assistant God Auditor"]
 ]
 
 // ADD COLORS HERE
 // HEX code first, use case second, and optionally, the outfit third.
 // For headings, Put the heading text as the first value and then put "h" as the second.
 const colors = [
-    ["FFFFFF", "Placeholder"]
+    ["339444", "Main Body"],
+	["004618", "Goggles, Back Carapace, Hands, Feet"],
+	["326273", "Antennae, Goggle Strap, Midsection"],
+	["FAFF81", "Eyes, Teeth, Tail"]
 ]
 
 
