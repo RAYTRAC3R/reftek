@@ -3,7 +3,7 @@
     --margins: 10px;
     --bg: #05007E;
     --primary: #FAFF81;
-    --border: 1px;
+    --border: 2px;
     --radius: 0px;
     --font: "mono"; /* pick from sans, serif, or mono */
 
@@ -15,7 +15,7 @@
     --shadow-color: rgba(0,0,0,0.2);
 
     /* Section headers */
-    --header-bg: #326273;
+    --header-bg: #82406F;
     --header-text: #FAFF81;
 
     /* Info */
@@ -58,7 +58,7 @@
     }
 
     body {
-        background-color: var(--bg);
+        background: linear-gradient(0deg, #A7CCDA 0%, #B780A8 75%);
         color: var(--primary);
         box-sizing: border-box;
         margin: 0;
@@ -110,7 +110,7 @@
         margin: 0;
         padding: var(--margins);
         font-family: "mono";
-        background-image: url("images/logo.svg");
+        background: linear-gradient(0deg, #A7CCDA 0%, #B780A8 75%);
         background-position: center;
         background-repeat: no-repeat;
     }

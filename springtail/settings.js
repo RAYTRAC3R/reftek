@@ -12,7 +12,7 @@ const angles = [
 // Enable and Disable
 const angleToggles = [
     "",
-	"Goggles"
+	"goggles"
 ]
 
 // ADD OUTFITS HERE. 
