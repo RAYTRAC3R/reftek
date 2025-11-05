@@ -18,7 +18,7 @@ const angleToggles = [
 // ADD OUTFITS HERE. 
 // Display name first, file path second.
 const outfits = [
-    ["Default", "images/springtail_front_default.png"],
+    ["Default (Bowtie Vest)", "images/springtail_front_default.png"],
 //    ["!", "images/placeholder.png"]
 ]
 
