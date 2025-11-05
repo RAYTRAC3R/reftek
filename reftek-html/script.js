@@ -84,7 +84,7 @@ function spawnInThings() {
         }
     }
     const createdUsingMessage = document.createElement("h6");
-    createdUsingMessage.innerHTML = "<a href='https://puzzylpiece.xyz/reftek/'>Created using Reftek</a>"
+    createdUsingMessage.innerHTML = "<a href='https://puzzylpiece.xyz/reftek/'>Created using Reftek</a> || <a href='https://toyhou.se/27238472.springtail'>Springtail's Toyhou.se</a> || <a href='https://www.notion.so/Springtail-1c5860e561918020946cf202067f2e0e?pvs=25'>Springtail's Other Links</a>"
     dataSection.appendChild(createdUsingMessage)
 
     if (angleToggles.length != 1) {

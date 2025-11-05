@@ -41,7 +41,7 @@ const info = [
 	["Species", "Hexapodian (Springtail) Cosmic Entity"],
 	["Gender", "Bigender"],
     ["Pronouns", "Any/All"],
-    ["Cosmic Duty", "Assistant God Auditor"]
+    ["Cosmic Duty", "Assistant God Auditor"],
 ]
 
 // ADD COLORS HERE
