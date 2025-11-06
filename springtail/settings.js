@@ -1,5 +1,14 @@
 // HELLO! This is the file you are supposed to edit to play with the refsheet.
 
+// TITLES
+// If you don't want the headers to appear, just leave each one as "". The fourth header controls the toggle switch's title
+const headers = [
+    "Angles",
+    "Outfits",
+    "Info",
+    "Hide"
+]
+
 // ADD ANGLES HERE. 
 // Display name first, file path second.
 const angles = [
@@ -56,6 +65,7 @@ const colors = [
 
 
 // ANIMATIONS
+// This will be replaced with preset animations later but for now you can just modify this code.
 
 const keyframesLeft = [
     { transform: 'translateX(10px)' },

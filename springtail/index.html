@@ -7,14 +7,20 @@
     <link rel="stylesheet" type="text/css" href="reftek-base.css">
     <link rel="preload">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Temporary solution until the beta to keep updates simpler */
+        .single-item {
+            justify-content: center !important;
+        }
+    </style>
 </head>
 
 <body>
     <div class="main">
         <section class="angles">
-            <h1>Angles</h1>
+            <h1 id="anglesTitle"></h1>
             <div class="preview" id="angleguy"></div>
-            <div class="selector">
+            <div id="angleSelector" class="selector">
                 <button id="butt1" onclick="prevAngle()">←</button>
                 <b id="anglesText"></b>
                 <button id="butt2" onclick="nextAngle()">→</button>
@@ -26,16 +32,16 @@
             </div>
         </section>
         <section class="outfits">
-            <h1>Outfits</h1>
+            <h1 id="outfitsTitle"></h1>
             <div class="preview"  id="outfitguy"></div>
-            <div class="selector">
+            <div id="outfitSelector" class="selector">
                 <button id="butt3" onclick="prevOutfit()">←</button>
                 <b id="outfitsText"></b>
                 <button id="butt4" onclick="nextOutfit()">→</button>
             </div>
         </section>
         <section class="data" id="dataSection">
-            <h1>Data</h1>
+            <h1 id="dataTitle"></h1>
             <div id="title">
                 
             </div>

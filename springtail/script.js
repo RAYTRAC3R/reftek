@@ -10,6 +10,14 @@ const angleForm = document.getElementById("angleToggles")
 const outfitPic = document.getElementById("outfitguy")
 const angleTxt = document.getElementById("anglesText")
 const outfitTxt = document.getElementById("outfitsText")
+const angleSel = document.getElementById("angleSelector")
+const outfitSel = document.getElementById("outfitSelector")
+const hideMyAss = document.getElementById("hidetext")
+const titles = [
+    document.getElementById("anglesTitle"),
+    document.getElementById("outfitsTitle"),
+    document.getElementById("dataTitle"),
+]
 
 function preloadEverything() {
     var images = [];
@@ -36,13 +44,24 @@ function changeAngleToggle(val) {
 }
 function spawnInThings() {
     updateImages();
+    for (let i = 0; i < 3; i++) {
+        console.log(titles[i]);
+        console.log(headers[i]);
+        if (headers[i] == "") {
+            titles[i].style.display = "none";
+        } else {
+            titles[i].innerText = headers[i];
+        }
+    }
     if (angles.length == 1) {
         document.getElementById("butt1").style.display = "none";
         document.getElementById("butt2").style.display = "none";
+        angleSel.classList.add("single-item")
     }
     if (outfits.length == 1) {
         document.getElementById("butt3").style.display = "none";
         document.getElementById("butt4").style.display = "none";
+        outfitSel.classList.add("single-item")
     }
     for (let i = 0; i < (info.length); i++) {
         if (info[i][1] == "h") {
@@ -69,7 +88,15 @@ function spawnInThings() {
             td.appendChild(list);
             tr.appendChild(td);
             infoTable.appendChild(tr);
-        } else {
+        } else if (info[i][1] == "n") {
+            const tr = document.createElement("tr");
+            const td = document.createElement("td");
+            td.innerText = info[i][0];
+            td.colSpan = 2;
+            tr.appendChild(td);
+            infoTable.appendChild(tr);
+        }
+        else {
             const newInfoRow = document.createElement("tr");
             const newInfoType = document.createElement("th");
             const newInfoTypeContent = document.createTextNode(info[i][0]);
@@ -84,7 +111,7 @@ function spawnInThings() {
         }
     }
     const createdUsingMessage = document.createElement("h6");
-    createdUsingMessage.innerHTML = "<a href='https://puzzylpiece.xyz/reftek/'>Created using Reftek</a> || <a href='https://toyhou.se/27238472.springtail'>Springtail's Toyhou.se</a> || <a href='https://www.notion.so/Springtail-1c5860e561918020946cf202067f2e0e?pvs=25'>Springtail's Other Links</a>"
+    createdUsingMessage.innerHTML = "<a href='https://puzzylpiece.xyz/reftek/'>Created using Reftek (alpha II)</a></a> || <a href='https://toyhou.se/27238472.springtail'>Springtail's Toyhou.se</a> || <a href='https://www.notion.so/Springtail-1c5860e561918020946cf202067f2e0e?pvs=25'>Springtail's Other Links</a>"
     dataSection.appendChild(createdUsingMessage)
 
     if (angleToggles.length != 1) {
@@ -111,8 +138,12 @@ function spawnInThings() {
             angleForm.appendChild(newToggleLabel);
             angleForm.appendChild(document.createElement("br"))
         }
+        if (headers[3] == "") {
+            hideMyAss.style.display = "none";
+        } else {
+            hideMyAss.innerText = headers[3];
+        }
     } else {
-        const hideMyAss = document.getElementById("hidetext")
         hideMyAss.style.display = "none";
     }
     for (let i = 0; i < (colors.length); i++) {
